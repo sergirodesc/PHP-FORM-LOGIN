@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos_comentarios.css">
+    <title>Comentarios y Feedback - Plataforma de Videojuegos</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Deja tu comentario</h2>
+        <form id="comentariosForm" action="../php/procesar_comentario.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <label for="correo_electronico">Correo Electrónico:</label>
+            <input type="email" id="correo_electronico" name="correo_electronico" required>
+            <br>
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" name="comentario" required></textarea>
+            <input type="hidden" name="token_csrf" id="token_csrf">
+            <br>
+            <input type="submit" value="Enviar Comentario">
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Generar y asignar el token CSRF
+            var tokenCSRF = generateToken();
+            document.getElementById("token_csrf").value = tokenCSRF;
+
+            // Función para generar un token CSRF único
+            function generateToken() {
+                var token = "";
+                var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+                for (var i = 0; i < 32; i++) {
+                    token += characters.charAt(Math.floor(Math.random() * characters.length));
+                }
+                return token;
+            }
+        });
+    </script>
+</body>
+</html>

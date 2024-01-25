@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos_contacto.css">
+    <title>Contacto y Soporte Técnico - Plataforma de Videojuegos</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Contacto y Soporte Técnico</h2>
+        <form action="../php/procesar_contacto.php" method="POST" enctype="multipart/form-data">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <label for="correo_electronico">Correo Electrónico:</label>
+            <input type="email" id="correo_electronico" name="correo_electronico" required>
+            <br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <br>
+            <label for="archivos_adjuntos">Archivos Adjuntos (capturas de pantalla, etc.):</label>
+            <input type="file" id="archivos_adjuntos" name="archivos_adjuntos[]" multiple>
+            <br>
+            <input type="submit" value="Enviar Consulta">
+        </form>
+    </div>
+</body>
+</html>

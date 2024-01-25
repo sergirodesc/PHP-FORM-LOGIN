@@ -1,0 +1,50 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(90deg, #0f0c29, #302b63, #24243e);
+    text-align: center;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.message-container {
+    background: linear-gradient(45deg, #4e54c8, #8f94fb);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 0 30px rgba(192, 150, 150, 0.2);
+}
+
+button {
+    background: linear-gradient(45deg, #78ffd6, #a8ff78);
+    color: #121212;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #6ef7ca, #92ffaa);
+}

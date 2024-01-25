@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos_preferencias.css">
+    <title>Preferencias de Videojuegos - Plataforma de Videojuegos</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Preferencias de Videojuegos</h2>
+        <form action="../php/procesar_preferencias.php" method="POST">
+            <div class="checkbox-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="preferencias[]" value="Aventura">
+                    <span class="checkbox-custom"></span>
+                    <span>Aventura</span>
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="preferencias[]" value="Acción">
+                    <span class="checkbox-custom"></span>
+                    <span>Romance</span>
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="preferencias[]" value="Estrategia">
+                    <span class="checkbox-custom"></span>
+                    <span>Terror</span>
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="preferencias[]" value="Deportes">
+                    <span class="checkbox-custom"></span>
+                    <span>Deportes</span>
+                </label>
+            </div>
+            <button type="submit">Guardar Preferencias</button>
+        </form>
+    </div>
+</body>
+</html>

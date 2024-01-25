@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos_registro.css">
+    <title>Registro de Jugadores - Plataforma de Videojuegos</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Registro de Nuevo Jugador</h2>
+        <form action="../php/procesar_registro.php" method="POST">
+            <label for="nombre_usuario">Nombre de Usuario:</label>
+            <input type="text" id="nombre_usuario" name="nombre_usuario" required>
+            <br>
+            <label for="correo_electronico">Correo Electrónico:</label>
+            <input type="email" id="correo_electronico" name="correo_electronico" required>
+            <br>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+            <br>
+            <input type="submit" value="Registrar">
+        </form>
+    </div>
+</body>
+</html>

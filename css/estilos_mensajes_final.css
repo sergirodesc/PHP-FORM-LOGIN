@@ -1,0 +1,64 @@
+/* estilos_mensajes_final.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(90deg, #0f0c29, #302b63, #24243e);
+    text-align: center;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    background: #303030;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background-color: #414479;
+    color: #ffffff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    color: #fff;
+    margin-top: 20px;
+}
+
+button {
+    background: linear-gradient(45deg, #78ffd6, #a8ff78);
+    color: #121212;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #6ef7ca, #92ffaa);
+    transform: scale(1.05);
+}
